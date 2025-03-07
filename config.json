@@ -1,0 +1,5 @@
+{
+  "tickets_api": "https://dramteatr39.edinoepole.ru/api/info/v1/tickets",
+  "dashamail_api": "https://api.dashamail.com",
+  "request_delay": 1440
+}

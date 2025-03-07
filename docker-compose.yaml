@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ticket-app
+    restart: always
+    environment:
+      - DASHAMAIL_API_KEY=${DASHAMAIL_API_KEY}
+      - DASHAMAIL_BASE_ID=${DASHAMAIL_BASE_ID}
+      - TICKETS_API_KEY=${TICKETS_API_KEY}
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    ports:
+      - "8080:8080"  # Если приложение слушает HTTP, можно изменить порт
