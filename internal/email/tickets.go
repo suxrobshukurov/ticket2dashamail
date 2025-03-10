@@ -61,9 +61,9 @@ func GetUsers(config configs.Config, startTime, endTime string) ([]User, error) 
 
 		users = append(users, User{
 			Email: t.Email,
-			City:  t.City,
-			Name:  t.Name,
-			Phone: t.Phone,
+			// City:  t.City,
+			// Name:  t.Name,
+			// Phone: t.Phone,
 		})
 	}
 

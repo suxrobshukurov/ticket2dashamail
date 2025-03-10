@@ -20,7 +20,8 @@ func TestSendToDashamail(t *testing.T) {
 		ApiUrl: server.URL,
 	}
 
-	user := User{Email: "test@example.com", City: "TestCity", Name: "TestName", Phone: "123456789"}
+	// user := User{Email: "test@example.com", City: "TestCity", Name: "TestName", Phone: "123456789"}
+	user := User{Email: "test@example.com"}
 
 	emailSent, err := SendToDashamail(&config, user)
 	if err != nil {

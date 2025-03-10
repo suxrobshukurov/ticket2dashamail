@@ -20,9 +20,9 @@ type TicketsResponse struct {
 // Пользователь для Dashamail
 type User struct {
 	Email string `json:"email"`
-	City  string `json:"merge_4"`
-	Name  string `json:"merge_1"`
-	Phone string `json:"merge_3"`
+	// City  string `json:"merge_4"`
+	// Name  string `json:"merge_1"`
+	// Phone string `json:"merge_3"`
 }
 
 // Запрос к Dashamail API

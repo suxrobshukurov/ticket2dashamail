@@ -16,9 +16,9 @@ func SendToDashamail(configs *configs.DashamailConfig, user User) (string, error
 		ApiKey: configs.ApiKey,
 		ListID: configs.BaseID,
 		Email:  user.Email,
-		City:   user.City,
-		Name:   user.Name,
-		Phone:  user.Phone,
+		// City:   user.City,
+		// Name:   user.Name,
+		// Phone:  user.Phone,
 	}
 	data, _ := json.Marshal(payload)
 
